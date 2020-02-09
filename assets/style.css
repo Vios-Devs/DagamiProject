@@ -1,0 +1,1039 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #eeecec;
+    font-family: "Poppins";
+    position: relative;
+}
+
+/* GLOBAL */
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    padding: 20px;
+    z-index: 100;  
+    overflow: hidden;
+}
+
+.container.bg-white {
+    background: #fff;
+    box-shadow: 0 0 12px 0 #ccc;
+}
+
+
+
+h2.page-head-title {
+    text-align: center;
+    color: rgb(80, 78, 78);
+    margin-bottom: 30px;
+    
+}
+
+
+.page-inner-wrap {
+    margin-bottom: 10px; 
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+}
+
+
+.page-inner-wrap.two-col-wrap {
+    display: flex;
+}
+
+.page-inner-wrap.two-col-wrap .col-one {
+    width: 50%;
+}
+
+.page-inner-wrap.two-col-wrap .col-two {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+
+
+
+.page-inner-wrap .image {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    margin: auto;
+    
+}
+
+.page-content-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+.page-content-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* BANNER */
+
+
+.banner {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .main-heading {
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    font-size: 28px;
+}
+
+.banner::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.banner.about {
+    background: url('../Images/ilovedagami.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner.news-events {
+    background: url('../Images/church-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.banner.food-delicacies {
+    background: url('../Images/binagol.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner.place {
+    background: url('../Images/church-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+/** HEADER SECTION **/
+
+header {
+    background: #6dcc5b;
+    width: 100%;
+    padding: 20px;
+    /* position: fixed;
+    z-index: 10000;
+    top: 0;
+    box-shadow: 0 0 12px #ccc; */
+}
+
+header .header-container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .header-container .logo-section {
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+header .header-container .logo-section .logo {
+    width: 80px;
+    height: 80px;
+    
+}
+
+header .header-container .logo-section h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    padding: 0 5px;
+}
+
+
+header .header-container .nav-section {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+header .header-container .nav-section .ul {
+    list-style: none;
+    display: flex;
+}
+
+header .header-container .nav-section .ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+    display: block;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+header .header-container .nav-section .ul li a.active {
+    background: #6dcc5b;
+}
+
+header .header-container .nav-section .ul li a:hover {
+    background: #549c46;
+}
+
+
+
+
+
+
+
+
+
+/*  SIDE NAVIGATION BAR */
+
+
+header #side-nav {
+    width: 100%;
+    height: 0;
+    background: #6dcc5b;
+    overflow: hidden;
+    position: fixed;
+    z-index: 3000;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+header #side-nav  li {
+    list-style: none;
+    transition: 0.3s;
+}
+
+
+
+header #side-nav  li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 30px;
+    display: block;
+    text-align: center;
+}
+
+header #side-nav  li a:hover {
+    background: #d3a306;
+}
+
+
+
+
+
+
+header #showBtn {
+    width: 60px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: none;
+    overflow: hidden;
+    background: #6dcc5b;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 5000;
+}
+
+
+
+header #showBtn div {
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    margin: 5px 0;
+    border-radius: 2px;
+    
+}
+
+header #side-nav li a.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    margin:0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+/** BANNER SECTION **/
+
+
+#banner-section {
+    height: 80vh;
+    background-image: url('../Images/ilovedagami.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+#banner-section .black-bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#banner-section .black-bg .banner-text {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 900;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+#banner-section .black-bg .banner-text .yellow-text {
+    color: #68d652;
+}
+
+
+#banner-section .black-bg .banner-btn {
+    padding: 20px 30px;
+    background: #5cca45;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+#banner-section .black-bg .banner-btn:hover {
+    background: #4eb43a;
+}
+
+
+
+
+
+/** ABOUT SECTION **/
+
+#about-content {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    z-index: 1000;
+}
+
+#about-content .container.about-text {
+    width: 70%;
+    height: 100vh;
+    background: #fff;
+    position: absolute;
+    top: -15%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10%;
+    text-align: center;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 0 0 10px #ccc;
+    z-index: 1000;
+}
+
+
+#about-content .container.about-text .read-more {
+    text-decoration: none;
+    color: #268a12;
+}
+
+
+#about-content .container.about-text::-webkit-scrollbar {
+    display: none;
+}
+
+
+#about-content .container .title {
+    font-weight: normal;
+    color: rgb(114, 111, 111);
+    margin-bottom: 30px;
+}
+
+#about-content .container .paragraph {
+    text-align: left;
+    font-size: 20px;
+    line-height: 40px;
+    color: rgb(122, 120, 120);
+    margin-bottom: 40px;
+}
+
+#about-content .container .paragraph .p-bold {
+    font-weight: bolder;
+}
+
+
+
+
+
+/** Random photo **/
+
+
+#random-photos {
+    width: 100%;
+    background: #6dcc5b;
+    overflow: hidden;
+    text-align: center;
+}
+
+#random-photos .container {
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+#random-photos .white-text {
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+
+/* SLIDER */
+
+
+.wrap, #slider, .slide-content {
+    width: 100%;
+    overflow-x: hidden;
+    transition: 1s;
+}
+.wrap {position: relative;;}
+
+.slide {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrap:hover:hover .black {
+    display: none;
+}
+
+.wrap:hover .arrow  {
+    display: block;
+}
+
+.slide1 {background-image: url('../Images/church-1.jpg');}
+.slide2 {background-image: url('../Images/binagol.jpg');}
+.slide3 {background-image: url('../Images/ilovedagami.jpg');}
+
+.slide-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.slide-content span {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    z-index: 10;
+    font-weight: bold;
+}
+
+.slide-content .black {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    transition: 1s;
+}
+
+
+.arrow {
+    cursor: pointer;
+    position :absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -30px;
+    border-style: solid;
+    display: none;
+    z-index: 20;
+}
+
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+}
+
+
+
+
+
+
+/** MAP SECTION **/
+
+#map-section {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    background: url('../Images/Dagami-Map.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+footer {
+    background: url('../Images/dagami-municipal-2.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* background: #35353b; */
+}
+
+
+footer::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+footer .container {
+    overflow: hidden;
+    display: flex;
+    
+}
+
+
+footer .container .nav-footer {
+    width: 50%;
+    padding: 40px 0;
+    z-index: 10;
+}
+
+footer .container .nav-footer ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+footer .container .nav-footer ul li {
+    border-bottom: 1px solid #fff;
+    padding: 20px;
+}
+
+footer .container .nav-footer ul li.border-top {
+    border-top: 1px solid #fff;
+}
+
+footer .container .nav-footer ul li a {
+    text-decoration: none;
+    color: #fff;   
+    font-size: 18px;
+}
+
+footer .container .nav-footer ul li a:hover {
+    color: #dfaf13;
+}
+
+
+footer .container .nav-logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+footer #copy-rights {
+    padding: 20px 0;
+    background: #404048;
+    z-index: 100;
+}
+
+footer #copy-rights p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 5px;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+/*** EMAIL STYLE MODIFIER ***/
+
+#email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#email input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    background: rgb(250, 49, 49);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+    background: rgb(212, 11, 61);
+}
+
+
+#email textarea {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    font-size: 16px;
+    font-family: poppins;
+}
+
+
+
+
+
+/* Action STYLE MODIFIER */
+
+
+.action-wrap {
+    display: flex;
+    font-size: 16px;
+    border:1px solid red;
+    margin-bottom: 30px;
+}
+
+.action-wrap .like {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    background: rgb(55, 195, 238);
+}
+
+.action-wrap .comment {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    background: rgb(55, 195, 238);
+}
+
+.action-hover {
+    border-right: 1px solid #fff;
+}
+
+.action-hover:hover {
+    background: rgb(29, 178, 223);
+}
+
+
+
+
+
+
+/** RESPONSIVE ***/
+@media screen and (max-width:1580px) {
+
+    header .header-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header .header-container .nav-section .ul li a{
+        text-decoration: none;
+        padding: 20px 10px;
+        display: block;
+        transition: 0.2s;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:950px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header .header-container {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header .header-container .nav-section .ul li a{
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        transition: 0.2s;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    footer .container {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .container .nav-footer {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+
+    footer .container .nav-footer ul {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #email input {
+        width: 100%;
+    }
+
+    #email textarea  {
+        width: 100%;
+    }
+
+
+    .page-inner-wrap.two-col-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .page-inner-wrap.two-col-wrap .col-one {
+        width: 100%;
+    }
+    .page-inner-wrap.two-col-wrap .col-two {
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    header .header-container .logo-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        float: none;
+    }
+
+    header .header-container .nav-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        float: none;
+    }
+
+
+
+    header .header-container .nav-section .ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 20px 10px;
+        display: block;
+        transition: 0.2s;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    #banner-section .black-bg .banner-text {
+        color: #fff;
+        font-size: 50px;
+        font-weight: 900;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:650px){
+
+
+    #most-visit-content .grid-wrap .each-box {
+        float: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    #most-visit-content .white-text {
+        color: #fff;
+        font-weight: normal;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+
+}
+
+
+
+
+/** MANY CHANGES IN CONTENT **/
+
+
+@media screen and (max-width: 920px) {
+
+    header .header-container {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+
+    header .header-container .nav-section .ul {
+        display: none;
+    }
+
+
+    #about-content .container.about-text {
+        width: 80%;
+        height: 100vh;
+        background: #fff;
+        position: absolute;
+        top: -15%;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10%;
+        text-align: center;
+        overflow: scroll;
+        overflow-x: hidden;
+        box-shadow: 0 0 10px #ccc;
+        z-index: 100;
+    }
+
+
+
+    #about-content .container .title {
+        font-weight: normal;
+        color: rgb(114, 111, 111);
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    #about-content .container .paragraph {
+        font-size: 18px;
+        line-height: 40px;
+        color: rgb(122, 120, 120);
+        margin-bottom: 40px;
+        line-height: 30px;
+    }
+
+    header #showBtn {
+        display: block;
+    }
+
+    .container.bg-white {
+        width: 100%;
+    }
+
+
+    h2.page-head-title {
+        font-size: 24px;
+    }
+
+
+
+    .page-inner-wrap .page-content-title {
+        font-size: 18px;
+    }
+    
+    
+    .page-inner-wrap .page-content-text {
+        font-size: 16px;
+    }
+
+
+
+    /* #email input {
+        width: 100%;
+    } */
+    
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    header {
+        padding: 0;
+    }
+    header .header-container .logo-section .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    header .header-container .logo-section h1 {
+        font-size: 20px;
+        font-weight: 900;
+        color: #fff;
+    }
+    
+
+    #banner-section .black-bg .banner-text {
+        font-size: 40px;
+    }
+
+
+    /* header .header-container .nav-section .search-wrap {
+        width: 100%;
+        overflow: hidden;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    } */
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
