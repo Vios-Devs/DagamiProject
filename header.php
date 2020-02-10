@@ -1,3 +1,12 @@
+<?php
+
+  require_once "./controller/connection.php";
+  
+  $conn = new Connection;
+  $conn->connect();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
