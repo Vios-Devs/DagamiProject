@@ -1,1 +1,1 @@
-Thesis po namin to, naway tulungan niyo po kami diyos at diyosa ng Programming at Coding. Biyayaan nawa kami ng katalinuhan at logihal na abilidad. Semi-colon.
+Thesis po namin to, naway tulungan niyo po kami diyos at diyosa ng Programming at Coding. Biyayaan nawa kami ng katalinuhan at lohikal na abilidad. Semi-colon.P

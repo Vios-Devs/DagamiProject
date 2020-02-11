@@ -17,7 +17,7 @@
         </div><!--container-->
 
         <div id="copy-rights">
-            <p>All rights reserve 2020</p>
+            <p>All rights reserved 2020</p>
         </div>
         
     </footer>

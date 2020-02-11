@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
     $("#showBtn").on('click', function(){
         $(this).css({
             'z-index': '0'
@@ -16,7 +15,10 @@ $(document).ready(function(){
             'transition': '0.3s ease-in-out'
         })
     })
-
+    $('#myCarousel').carousel({
+        interval: 100,
+        cycle: true
+      }); 
 
     
 
