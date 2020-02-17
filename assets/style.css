@@ -133,10 +133,15 @@ h2.page-head-title {
     background-size: cover;
     background-position: center;
 }
-
-.banner.news-events:active{
-    
-}
+.modal-header, h4, .close {
+    background-color: #5cb85c;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }
 
 .banner.food-delicacies {
     background: url('../Images/binagol.jpg');
@@ -144,20 +149,11 @@ h2.page-head-title {
     background-position: center;
 }
 
-
 .banner.place {
     background: url('../Images/church-2.jpg');
     background-size: cover;
     background-position: center;
 }
-
-
-
-
-
-
-
-
 
 /** HEADER SECTION **/
 
@@ -503,7 +499,6 @@ a.left.carousel-control {
     height: 100%;
     
 }
-
 
 .arrow {
     cursor: pointer;

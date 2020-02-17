@@ -21,22 +21,32 @@
     </div>
 <div id="slider-content-wrap">
     <div class="container">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="Images/ilovedagami.jpg" alt="Los Angeles" style="width:100%;">
+                    <img src="Images/slider-images/ilovedagami.jpg" alt="Los Angeles" style="width:100%;">
                 </div>
                 <div class="item">
-                    <img src="Images/church-1.jpg" alt="Chicago" style="width:100%;">
+                    <img src="Images/slider-images/binagol.jpg" alt="Los Angeles" style="width:100%;">
                 </div>
                 <div class="item">
-                    <img src="Images/binagol.jpg" alt="New york" style="width:100%;">
+                    <img src="Images/slider-images/church.jpg" alt="Los Angeles" style="width:100%;">
                 </div>
+                <div class="item">
+                    <img src="Images/slider-images/church-2.jpg" alt="Los Angeles" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="Images/slider-images/church-3.jpg" alt="Los Angeles" style="width:100%;">
+                </div>
+                
+                
             </div>
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
